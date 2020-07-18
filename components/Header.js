@@ -30,7 +30,7 @@ function Header() {
     span1.textContent = "MARCH 28, 2020";
     header1.textContent = "Lambda Times";
     span2.textContent = "98 degrees";
-    console.log(maindiv);
+    //console.log(maindiv);
 
     return maindiv;
 
