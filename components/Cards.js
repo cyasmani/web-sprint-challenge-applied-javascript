@@ -59,19 +59,15 @@ const info = axios.get("https://lambda-times-backend.herokuapp.com/articles")
         
     });
 }).catch(err => {
+    const error1 = document.createElement("h1");
+    const container1 = document.querySelector(".cards-container")
+    container1.appendChild(error1);
+    error1.textContent = "Failure fetching articles";
     console.log("error", err)
 });
 
 function articleMaker(obj){
-// <div class="card">
-//   <div class="headline">{Headline of article}</div>
-//   <div class="author">
-//     <div class="img-container">
-//       <img src={url of authors image} />
-//     </div>
-//     <span>By {author's name}</span>
-//   </div>
-// </div>
+
     const carddiv = document.createElement("div");
     const headerdiv = document.createElement("div")
     const authordiv = document.createElement("div");
