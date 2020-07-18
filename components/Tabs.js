@@ -10,7 +10,7 @@
 //
 // NOTE: you do _not_ need to install axios as it's included in the HTML via script element
 const information = axios.get("https://lambda-times-backend.herokuapp.com/topics").then(response => {
-    console.log("success",response);
+    //console.log("success",response);
     //console.log(response.data.topics);
 
     response.data.topics.forEach(element => {
